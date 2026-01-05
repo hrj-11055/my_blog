@@ -3,11 +3,11 @@
   <title>个人日记</title>
   
   <subtitle>记录生活与技术</subtitle>
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://hrj-11055.github.io/my_blog/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="https://hrj-11055.github.io/my_blog/"/>
   <updated>2026-01-05T09:13:56.208Z</updated>
-  <id>http://example.com/</id>
+  <id>https://hrj-11055.github.io/my_blog/</id>
   
   <author>
     <name>MarkHuang</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>我的第一篇博客</title>
-    <link href="http://example.com/2026/01/05/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://example.com/2026/01/05/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</id>
+    <link href="https://hrj-11055.github.io/my_blog/2026/01/05/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
+    <id>https://hrj-11055.github.io/my_blog/2026/01/05/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</id>
     <published>2026-01-05T09:13:39.000Z</published>
     <updated>2026-01-05T09:13:56.208Z</updated>
     
@@ -34,21 +34,21 @@
     
     
     
-    <category term="学习笔记" scheme="http://example.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <category term="学习笔记" scheme="https://hrj-11055.github.io/my_blog/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-    <category term="Hexo" scheme="http://example.com/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://hrj-11055.github.io/my_blog/tags/Hexo/"/>
     
-    <category term="博客" scheme="http://example.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+    <category term="博客" scheme="https://hrj-11055.github.io/my_blog/tags/%E5%8D%9A%E5%AE%A2/"/>
     
-    <category term="学习" scheme="http://example.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://hrj-11055.github.io/my_blog/tags/%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://example.com/2026/01/05/hello-world/"/>
-    <id>http://example.com/2026/01/05/hello-world/</id>
+    <link href="https://hrj-11055.github.io/my_blog/2026/01/05/hello-world/"/>
+    <id>https://hrj-11055.github.io/my_blog/2026/01/05/hello-world/</id>
     <published>2026-01-05T08:53:22.786Z</published>
     <updated>2026-01-05T08:53:22.786Z</updated>
     
