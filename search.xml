@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Mac换键帽随笔</title>
+      <link href="/my_blog/2026/06/02/Mac%E6%8D%A2%E9%94%AE%E5%B8%BD%E9%9A%8F%E7%AC%94/"/>
+      <url>/my_blog/2026/06/02/Mac%E6%8D%A2%E9%94%AE%E5%B8%BD%E9%9A%8F%E7%AC%94/</url>
+      
+        <content type="html"><![CDATA[<h1 id="mac-换键盘随笔"><a href="#mac-换键盘随笔" class="headerlink" title="mac 换键盘随笔"></a>mac 换键盘随笔</h1><p>我这台 Mac 是二手的，用了一段时间之后，有个问题越来越明显——</p><p>键盘打油有点严重，看着就很旧，用着也不太舒服。</p><p>一开始我其实动过一个念头，干脆换台新的算了。</p><p>结果去看了一圈价格，8000 多，立马冷静了。</p><p>因为说到底，电脑本身一点问题没有，就是键盘看着难受。</p><p>后来我去查了一下，发现苹果其实是可以给你换键帽的，有些情况甚至是免费的。</p><p>但问题是，这个服务基本约不到，我这边一直刷不到直营店的名额。</p><p>那就只能自己想办法了。</p><p>我最后是在拼多多买了一套键帽，买之前记得一定要报清楚型号，不然很容易买错。</p><p>中间我还问了一下外面帮忙换的价格，大概 300。</p><p>我看了一下教程，觉得这事没什么技术含量，就是个熟练活，就没找人，直接自己上手了。</p><p>开始之前，我先把商家发的视频看了一遍。</p><p>然后从最简单的字母键开始拆，慢慢找感觉。</p><p>拆开之后才发现，键帽下面是真的脏，全是灰。</p><p>所以如果你要换，建议顺手买个清灰工具，不然你拆开会有点难受。</p><p>等前面这些小键换熟了，我才去动那些比较麻烦的，比如空格、Shift 这种长条键。</p><p>这里我踩了一个坑，专门说一下空格键。</p><p>一开始我以为空格键无所谓方向，反正看起来差不多。</p><p>结果发现不对，它其实是有方向的。</p><p>我当时装的时候一直按不上去，还以为是自己手法有问题，后来才意识到是装反了。</p><p>一个简单的判断方法就是：</p><p>先别用力按，轻轻对一下位置——</p><p>如果是对的方向，它是能比较顺地贴合上去的；</p><p>如果你感觉怎么都对不齐、卡住，那大概率就是反了。</p><p>而且空格键里面有那种平衡结构，如果方向不对，就算勉强装上去，手感也会很怪。</p><p>我整个过程大概折腾了一个小时，最后全部换完了，也没翻车。</p><p>不过中间还是能明显感觉到，这种键盘结构其实挺脆的，用力不对是有可能直接掰坏的，所以动手的时候还是要小心一点。</p><p>换完之后最大的变化其实很简单——</p><p>就是看着没那么“二手感”了，用起来也顺眼很多。</p><p>反正这事不复杂，但也不是完全没风险，看你愿不愿意自己动手折腾一下。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 随笔 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 随笔 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>2</title>
+      <link href="/my_blog/2026/06/02/2/"/>
+      <url>/my_blog/2026/06/02/2/</url>
+      
+        <content type="html"><![CDATA[<h1 id="别再发-PDF-简历了——为什么我把自己的简历做成了一个网站"><a href="#别再发-PDF-简历了——为什么我把自己的简历做成了一个网站" class="headerlink" title="别再发 PDF 简历了——为什么我把自己的简历做成了一个网站"></a>别再发 PDF 简历了——为什么我把自己的简历做成了一个网站</h1><p>你有没有想过一个问题：你发出去的那份 PDF 简历，和另外 500 份，有什么区别？</p><p>格式差不多，措辞差不多，”熟练掌握 XX、精通 XX、参与 XX 项目”——当所有人都在用同一套模板说话，<strong>文字本身已经失去了区分度</strong>。</p><p>尤其是在 AI 时代。现在任何人都能用 AI 润色出一份”完美简历”，措辞精准、逻辑自洽、滴水不漏。但恰恰因为”完美”变得太容易了，另一件事反而变得极其稀缺——</p><p><strong>真实。</strong></p><h2 id="真实，是-AI-时代最稀缺的东西"><a href="#真实，是-AI-时代最稀缺的东西" class="headerlink" title="真实，是 AI 时代最稀缺的东西"></a>真实，是 AI 时代最稀缺的东西</h2><p>我最近在做一件事：<a href="https://huangrenjie.com/">把自己的简历变成一个网站</a>。</p><p>不是那种套模板的在线简历生成器，而是从零开始，把我的项目经历、技术思考、甚至做产品过程中的那些弯路，都放进一个可以点击、可以交互的页面里。</p><p>为什么？</p><p>因为我越来越觉得，<strong>在 AI 能生成一切的今天，一个人真正的竞争力不在于”能做出什么”，而在于”真实地做过什么、想过什么、走过什么路”。</strong></p><p>你想啊——</p><ul><li>AI 能帮你写项目描述，但写不出你凌晨三点 debug 到崩溃又突然想通的那个瞬间</li><li>AI 能帮你润色技术栈总结，但总结不出你为什么从 NLP 转向 AI 全栈、中间经历了什么判断</li><li>AI 能帮你生成一份漂亮的简历，但生成不出你做过的产品背后那些真实的取舍和思考</li></ul><p><strong>这些东西，只有你自己能写出来。</strong></p><p>而如果你能把这些真实的东西，以一种让人愿意看、看得进去的方式呈现出来——在面试官眼中，你已经赢了大多数人。</p><h2 id="所以我做了什么"><a href="#所以我做了什么" class="headerlink" title="所以我做了什么"></a>所以我做了什么</h2><p>我做了三件事：</p><p><strong>第一，把自己的作品集做成了一个真正的产品。</strong></p><p>不是静态页，不是模板站。我给它加了实时系统监控看板、代码流动效、开源致敬的交互卡片。每一个动效背后都是一次审美判断——我不是在炫技，我是在用产品本身证明：这个人能独立把一个想法落地。</p><p><strong>第二，把做产品的过程也变成了内容。</strong></p><p>我在网站里放了一个”产品沉思录”板块，记录每次做产品时的思考——为什么这么选、踩了什么坑、收获了什么认知。这不是事后包装的复盘，而是真实的成长轨迹。</p><p><strong>第三，把这套方法做成了一项服务。</strong></p><p>我的网站是一个样板。既然我验证了”简历可以长这样”，那别人也可以。所以我做了 <a href="https://resumepro.xin/">resumepro.xin</a>——帮任何人把简历转换成个人展示网站。</p><p><strong>先看效果，再用工具。</strong> 我自己就是这个产品最好的用户。</p><h2 id="我想表达的核心观点"><a href="#我想表达的核心观点" class="headerlink" title="我想表达的核心观点"></a>我想表达的核心观点</h2><p>这篇文章不是来卖产品的。我想说的是一个更底层的东西：</p><p><strong>在这个时代，会记录、会总结、会把自己真实展现出来的人，自带护城河。</strong></p><p>大部分人做完项目就结束了。但如果你能多做一步——</p><ol><li><strong>记录</strong>：这个项目我做了什么决策、为什么这么做</li><li><strong>总结</strong>：做完之后我学到了什么、下次会怎么改</li><li><strong>展示</strong>：把这些东西以可见的形式呈现出来</li></ol><p>你就已经完成了一次从”执行者”到”思考者”的跃迁。</p><p>面试官看的不只是你做了什么，更是 <strong>你怎么想的</strong>。一个能清晰说出自己成长路线的人，和一个只会罗列技术栈的人，在面试官眼中是完全不同的候选人。</p><h2 id="如果你也在找工作"><a href="#如果你也在找工作" class="headerlink" title="如果你也在找工作"></a>如果你也在找工作</h2><p>给你一个建议：</p><p><strong>别只准备一份简历，准备一个”作品”。</strong></p><p>它不一定非得是网站。可以是一个 GitHub 仓库、一篇深度技术博客、一个可交互的 Demo。核心是——让面试官能”看到”你，而不只是”读到”你。</p><p>如果你想试试把简历变成网站，<a href="https://resumepro.xin/">resumepro.xin</a> 在那里，你可以直接用。</p><p>但更重要的是背后的那个认知：</p><blockquote><p><strong>AI 能帮你生成一切，唯独生成不了”你真正走过的路”。把这条路展现出来，就是你最大的竞争力。</strong></p></blockquote><hr><p><em>这是我的<a href="https://huangrenjie.com/">个人作品集</a>，也是我”简历转网站”理念的第一个样板。欢迎来看看一个真实的开发者是什么样子的。</em></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 随笔 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 随笔 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>写作新手如何实现 高质量输出？复制</title>
+      <link href="/my_blog/2026/01/15/%E5%86%99%E4%BD%9C%E6%96%B0%E6%89%8B%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0-%E9%AB%98%E8%B4%A8%E9%87%8F%E8%BE%93%E5%87%BA%EF%BC%9F%E5%A4%8D%E5%88%B6/"/>
+      <url>/my_blog/2026/01/15/%E5%86%99%E4%BD%9C%E6%96%B0%E6%89%8B%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0-%E9%AB%98%E8%B4%A8%E9%87%8F%E8%BE%93%E5%87%BA%EF%BC%9F%E5%A4%8D%E5%88%B6/</url>
+      
+        <content type="html"><![CDATA[<p>写作新手如何实现 3000 字的高质量输出？我的“笨办法”：复制才是第一生产力。 很多人问我：怎么用 Effie 写出一篇完整的深度好文？ 实话实说，我起初完全没有写作水平，更别提逻辑感。但我发现，对于我们普通人来说，“复制”其实是第一生产力。中国人最擅长的是从 1 到 100，所以我决定：先找模板，研究拆书，对着优秀的范文“抄”出逻辑。 我给自己定了一个目标：在正式发表微信公众号文章前，先通过刻意练习达到 3000 字的输出水平。每天坚持写，写完再用 AI 进行润色改进。 这时候你可能会问：现在语音输入这么方便，为什么还要在 Effie 上一个字一个字地敲？ 因为思考需要结构。语音转文字往往是感性的、细碎的“完整体”，一口气说完容易，但想说得头头是道、有理有据却极难。我看冯唐的讲书稿，发现他会精妙地加入语气词来拉近听众距离，这种举重若轻的表达背后，其实是严密的逻辑支撑。 所以，我选择在 Effie 里沉淀。先把大神的精华“复制”过来，再尝试用自己的话重组一遍。这是最笨的功夫，也是最扎实的修行。如果你也想开始创作，不如和我一起，从这种“结构化拆解”开始。 标题：不会写作，又想在公众号写3000字？我用 Effie 走了一条“抄出来”的路 你是不是也有这种感觉： 一提到“写一篇3000字的公众号文章”，脑子立刻一片空白？ 想写，又不知道从哪儿下手； 素材零零散散在手机、脑子、各种笔记里，凑不成一篇像样的文章； 更别说什么“写作水平”——感觉自己连作文都快不会写了。 那怎么办？ 躺平？放弃？ 还是——换一种思路，先用“复制”这把锤子，把写作这颗钉子砸进去？ 一、为什么是 Effie，而不是语音转文字？很多人第一反应是： “我不会写，要不直接语音转文字？我说一说不就完了？” 听上去很省事对吧？ 但你认真想一想——你现在能一口气，把一件事讲得头头是道、有理有据、结构清晰吗？ 绝大多数人都做不到。 说话的时候，我们习惯“想到哪儿说哪儿”， 中间夹一堆“嗯啊这个那个”， 情绪有了，但逻辑很容易散。 语音转文字，只会把你说话时的混乱，完整地、忠实地变成一大坨“无结构文本”。 看着就想关掉。 而 Effie 不一样。 它是为“打字思考”准备的： 你可以一段一段敲， 一块一块挪， 哪里废话多就删，哪里没说清就补， 在写的过程里，顺手就把逻辑和结构搭出来了。 简单说： 语音是“情绪一股脑倒出来”； Effie 是“边写边搭框架，边思考边打磨”。 当你写公众号、写一篇给别人看的文章时， 结构、逻辑、留白、节奏，这些都很重要， 而这些，光靠“嘴”是很难一口气搞定的。 二、我没有写作水平，能写吗？答案是：抄很多人一上来就给自己设了一个很高的门槛： “我又不是作家，怎么写？” “我语文也不好，写出来肯定很尴尬。” 那换个问题： 你会抄吗？ 如果你会抄，恭喜——你已经掌握了“写作入门技能”。 别误会，这里的“抄”不是照搬粘贴去发公众号， 而是把“复制”当作第一生产力，用来练手、练脑、练结构。 中国人最擅长的是 1-100： 给你一个样板，你能模仿着把东西做大、做深、做熟。 写作也一样。 与其空想“我要写一本书”， 不如先找一篇你很喜欢、写得很顺的公众号文章， 用 Effie 打开，照着它的结构，一段一段拆开、照着写。 三、怎么“抄”？不是 ctrl+c，而是拆解和重建那问题来了： “抄”具体要怎么操作？ 不是照着一字不落写吧？ 当然不是。 你要抄的是： 别人的结构 别人的节奏 别人怎么讲道理、怎么讲故事 比如你看到一篇不错的文章，可以在 Effie 里这样拆： 先看大结构： 开头怎么引入？是讲一个小故事，还是抛出一个问题？ 中间是怎么分段的？几部分？每部分在说什么？ 结尾怎么收？是总结、是号召，还是留一个问题？ 再看小结构： 每一小节用什么例子？ 有没有用到反问句、设问句？ 有没有用一些日常细节，让人觉得“说的就是我”？ 最后再自己写一遍： 不看原文，用刚才拆出来的“骨架”， 换成你自己的经历、你自己的话， 把整篇文章“照着结构写一版”。 抄的不是句子， 而是“人家是怎么说清楚一件事的”。 四、3000字公众号文章，要先练到什么程度？你想一口气写一篇3000字文章， 这就像一口气跑完 10 公里。 如果你平时连 500 米都没跑过， 直接上来 10 公里，铁定废。 所以，在用 Effie 写出一篇 3000 字文之前，你可以给自己设一个小目标： 每天写一小节，500<del>800 字就好； 先不发公众号，只在 Effie 里练； 找一篇你喜欢的文章，用“拆解+模仿”的方式，照着写。 比如你可以这样安排： 第 1 周：每天模仿一段开头，怎么引出话题。 第 2 周：每天模仿一小节，怎么举例子、讲故事。 第 3 周：练结尾——怎么总结、怎么让读者有点“被点醒”的感觉。 第 4 周：把这三周的练习，串成一篇完整文章。 这中间，你可以用 AI 帮你改： 帮你看逻辑顺不顺； 哪里太啰嗦了； 哪一句可以更口语、更像“一个人在微信跟你聊天”。 你会发现， 当你每天都在写， 3000 字真的只是字数问题，不再是心理门槛。 五、为什么说“复制”是第一生产力？“抄别人的稿子，用自己的话讲一遍”， 听上去是不是很简单？ 真正做的时候，你会发现——这简直是最难的一关。 因为它逼着你做三件事： 真的看懂别人在说什么 表面看懂是一回事， 能用自己的语言讲出来，是另一回事。 把别人的逻辑，转成你能理解的逻辑 你要搞清楚： 他为什么这样排段落？ 为什么先讲 A 再讲 B？ 哪一段是铺垫，哪一段是点题？ 最后重新表达 不能抄原句， 只能用你自己的词、你自己的语气， 字字句句都得亲手敲出来。 这个过程，会让你的写作肌肉，一点一点变强。 就像健身房里练力量： 不是看别人举铁的视频，而是你自己上手。 六、Effie 在这套“抄中学”的方法里，能帮你什么？你可以把 Effie 当成一个“练功房”： 把你喜欢的文章贴进去，一段一段拆结构； 旁边开一个新文档，照着结构自己写； 不满意的地方，随时调整段落顺序、补充例子、删掉废话。 它不会催你发稿， 不会逼你“今天必须产出一个爆款标题”， 只是安安静静地陪你： 一字一句敲； 一段一段改； 一篇一篇堆。 当你回头翻看，会突然发现： “咦，我居然已经能写一篇自己看着都还行的文章了。” 七、从“不会写”到“敢发文”，就差一段坚持写作的真相其实很朴素： 不是你天赋有多高， 而是你到底愿不愿意每天写一点。 你完全可以给自己定一个很小很小的目标： 每天在 Effie 里写 300</del>500 字； 找一个你欣赏的作者，当作“写作教练”； 不急着发，只专注一件事： ——今天的自己，能不能比昨天写得更顺一点？ 也许有一天，你会发现， 曾经觉得“不可能写到 3000 字”的你， 已经在为下一篇文章构思标题了。 最后，留一个小问题给你： 如果你今晚只用 Effie 写 300 个字， 你会选择： 拆一篇你喜欢的文章，照着它的结构写一小节？ 还是 记录一件你今天印象最深的小事，用“讲给朋友听”的方式写出来？ 选一个，现在就开始写。 写下去，才有可能，看到一个你自己都想转发的公众号。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 随笔 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 随笔 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>如何写作</title>
+      <link href="/my_blog/2026/01/13/%E5%A6%82%E4%BD%95%E5%86%99%E4%BD%9C/"/>
+      <url>/my_blog/2026/01/13/%E5%A6%82%E4%BD%95%E5%86%99%E4%BD%9C/</url>
+      
+        <content type="html"><![CDATA[<p>我为什么要坚持写作最近看了很多关于 AI 辅助写作的教程，但我发现它们大多停留在”如何快速完成任务”的层面。这种做法本质上是在走捷径——也许能产出看起来不错的文章，但对个体的思考能力和写作水平毫无裨益。 痛苦是进步的唯一路径所有的技能提升，都必须经历痛苦的磨练。 如果一篇文章从构思到成句都依赖 AI，那你得到的只是熟练使用 prompt 的能力，而不是写作能力。我现在的写作水平并不出色，但如果全程依赖 AI，即使最终结果看起来光鲜亮丽，我对这篇文章也不会有真正的理解和记忆——因为它本质上不是我的作品。 你要打造属于自己的独特风格，哪怕它一开始并不完美。 写不好是正常的，这是必经之路，没有捷径。但通过一次又一次的迭代优化和坚持，结果终究不会差。我现在要求自己每天手写 1000 字，不带任何 AI 辅助。这些积累下来的文字，才是真正的”第二大脑”。 写作的两阶段论我逐渐摸索出了一套适合自己的写作方法： 第一阶段：为自己而写 10 分钟 400 字，这是我进入心流状态后的写作速度。每天 1000 字，其实只需要 25 分钟。这些初稿不一定都要发布，它们首先是写给自己看的，记录自己最纯粹的想法——这才是最有价值的事。 当处于心流状态时，文字会自然流淌。如果写作时不能尽兴，还不如不写。 第二阶段：为读者而写 初稿完成后，才需要考虑读者是否喜欢。这时候要站在读者的角度思考：怎么写才能让他们更容易接受？这一部分可以借助 AI 进行润色优化，生成标题、配图等。 从初稿到成品的转化，本质上是从”自我表达”到”有效传播”的转变。 我的写作实践流程以读书创作为例，我梳理了一套完整的写作思路： 第一步：输入与积累 看书、听书，让自己有”进货”。吸收知识时，用 flomo 随时记录灵感和碎片。每天晚上用 Get 笔记写完整的一日复盘——今天做了什么、收获了什么、有什么思考。这不仅是记录，更是与自己的对话。 第二步：深度加工 正式阅读时，使用 NotebookLM 帮助消化，制作学习材料如演示文稿、信息图、报告。对话时采用费曼学习法，用辩论、笔记记录、金句摘抄等方式加深理解。当自己觉得能真正讲清楚了，就可以录视频分享。 第三步：输出与传播 基于笔记手写初稿，完成纯粹的自我表达后，再用 AI Agent 进行润色、生成标题和配图，最终发布。 这条链路的核心是：每一步都有自己的思考和动手，AI 只是辅助工具，而非替代品。 没有实践的阅读是徒劳说实话，我之前计划每天睡前听书 15 分钟，但一个星期过去了，我总是在玩游戏、刷短视频，根本没把心思放在自我提升上。 这让我意识到一个问题：读太多书，但没有通过实践去理解书中的精髓，一切都是白搭。 当你从书中看到一个观点，记录下来只是第一步。最重要的是实践——在生活中尝试、应用它一段时间（比如一周），形成自己的经验之谈。这时候再写感悟，才会有真正的深度。 实践是检验认知的唯一标准，而写作是整理实践成果的最佳方式。 写作是思考的延伸表达自己、获得认同，这是一辈子的事。 写作之所以重要，是因为它能让思考变得可见、可追溯。写作，是让自己感到有价值的方式，也是对抗虚无的武器。 我现在正在建立这样的能力和习惯，相信未来会有大裨益。 写作不是为了证明给别人看，而是为了不让自己忘记自己想过的东西。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 随笔 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 随笔 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>总结博客</title>
+      <link href="/my_blog/2026/01/13/%E6%80%BB%E7%BB%93%E5%8D%9A%E5%AE%A2/"/>
+      <url>/my_blog/2026/01/13/%E6%80%BB%E7%BB%93%E5%8D%9A%E5%AE%A2/</url>
+      
+        <content type="html"><![CDATA[<p>零基础一夜构建 AI 文本润色助手：FastAPI + React + AI 结对编程实战复盘前言：为什么做这个？作为一名正在学习前后端技术的学生，我的目标非常明确：进入 AI 应用开发领域。 但在面对繁杂的技术栈（Vue vs React, Java vs Python）时，我曾陷入纠结。在与我的 AI 编程搭档（Gemini）深度探讨后，我确立了 AI 开发的黄金组合：FastAPI (后端) + React (前端)。 为了验证这套技术栈，我决定发起挑战：在一天内，从零构建一个可用的“AI 文本润色助手”。本文将复盘这一过程中的关键步骤、踩坑经验，以及我如何通过“AI 结对编程”高效解决问题。 第一阶段：顶层设计与技术选型在写第一行代码前，我先明确了目标。 1. 为什么选 FastAPI + React？ 后端 (FastAPI)：AI 领域的“第一公民”是 Python。FastAPI 极其轻量，原生支持异步（这对 AI 流式输出至关重要），且代码量极少。 前端 (React)：虽然 Vue 上手快，但全球 AI 生态（如 Vercel AI SDK, LangChain.js）几乎都是 React 优先。为了未来不重复造轮子，我选择了 React + Vite。 2. MVP（最小可行性产品）规划 我不追求大而全，只保留核心流程： 用户输入文本 -&gt; 选择风格 -&gt; 后端调用 LLM -&gt; 返回润色结果 第二阶段：从 0 到 1 的开发全流程1. 极速搭建骨架我没有浪费时间在配置上，而是直接指令 AI：“给我一个基于 FastAPI 和 React 的最简单的项目结构”。 后端：建立 main.py，解决最头疼的 CORS（跨域）问题。 前端：用 Vite 快速初始化，清理掉默认代码。 2. 核心逻辑实现 API 设计：后端只需一个 &#x2F;polish 接口。利用 Pydantic 做数据校验，确保传给 AI 的数据格式正确。 UI 交互：前端使用 useState 管理输入框和结果框的状态，通过 fetch 请求后端。 3. 遇到的第一个坑：看不见的文字现象：后端日志显示 200 OK 且有返回内容，但网页上是一片空白。 排查：我没有盲目改代码，而是学会了**“前后端分治排查法”<strong>： 后端埋点：在 Python 里 print 返回结果，确认数据已生成。 前端审查：F12 查看 Network 面板，确认响应体有内容。 真相：原来是 CSS 样式问题。我的网页背景是白色的，字也是白色的（深色模式残留）。 经验：当程序不报错但结果不对时，往往是“显示”欺骗了你。 第三阶段：关键升级 —— 让应用“活”过来MVP 跑通后，应用显得很笨拙，需要等待 AI 完全生成完才能显示。这里进入了 AI 应用开发的核心领域。 1. 实现“流式输出” (Streaming)这是 ChatGPT 体验的核心。 后端改造：将 return 改为 yield，使用 StreamingResponse 一点点吐出数据。 前端改造：抛弃简单的 await response.json()，改用 Reader 和 TextDecoder 实时读取二进制流，并拼接到界面上。 效果：文字开始像打字机一样一个接一个蹦出来，体验瞬间提升 10 倍。 2. 引入“提示词工程” (Prompt Engineering)为了让应用更灵活，我增加了“自定义 Prompt”功能。 逻辑：在前端增加开关，允许用户输入类似 请把这段话翻译成英文：{text} 的模板。 后端：接收模板并进行</strong>“模板注入”<strong>（Template Injection），替换 {text} 变量。 价值：这让我的应用从单一的“润色器”变成了“万能文本处理器”。 第四阶段：UI&#x2F;UX 的最后打磨功能完善后，我优化了视觉体验： Markdown 渲染：引入 react-markdown，让 AI 生成的列表、代码块漂亮地显示，不再是纯文本。 全屏布局：修改 CSS Flex 布局，让输入框和输出框占满屏幕，更像一个生产力工具。 一键复制：调用浏览器 Clipboard API，提升实用性。 核心心得：如何与 AI 结对编程？这次开发之所以快，是因为我改变了与 AI (Gemini) 的沟通方式。我不再把它当作简单的搜索工具，而是</strong>“资深导师”**。 我的高效沟通 Methodology： 决策先行：在开始前，我会问：“我要做 AI 应用，React 和 Vue 哪个生态更好？FastAPI 和 SpringBoot 哪个更适合？” —— 让 AI 提供宏观建议，避免走弯路。 分步执行：我不会说“帮我写个软件”，而是拆解为：“第一步教我搭建后端”、“第二步教我写前端 fetch 逻辑”。 —— 颗粒度越细，AI 给的代码越精准。 报错即投喂：遇到报错（如 Connection refused 或 Model Not Exist），我直接截图或复制日志给 AI，并附上我当前的代码。 —— 上下文越足，Debug 越快。 追问原理：当 AI 给我代码（比如流式输出的 yield）时，我会问：“为什么要这么做？和普通 return 有什么区别？” —— 不仅由于 Copilot 写代码，更要借此机会学习核心概念。 总结通过这个周末的实战，我不仅拥有了一个自己写的 AI 工具，更重要的是打通了 FastAPI + React + LLM 的全栈链路。 对于想入门 AI 开发的朋友，我的建议是：别想太多，先动手做一个 MVP，跑通才是硬道理。 💡 下一步计划 增加“历史记录”功能（需要引入数据库）。 尝试部署到云服务器，让朋友也能使用。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 随笔 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 随笔 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>测试自动发布功能</title>
+      <link href="/my_blog/2026/01/13/%E6%B5%8B%E8%AF%95%E8%87%AA%E5%8A%A8%E5%8F%91%E5%B8%83%E5%8A%9F%E8%83%BD/"/>
+      <url>/my_blog/2026/01/13/%E6%B5%8B%E8%AF%95%E8%87%AA%E5%8A%A8%E5%8F%91%E5%B8%83%E5%8A%9F%E8%83%BD/</url>
+      
+        <content type="html"><![CDATA[<p>测试自动发布功能这是我用来测试博客自动发布系统的第一篇文章！ 系统功能这个自动化系统可以： 自动检测桌面 ~&#x2F;Desktop&#x2F;博客&#x2F; 文件夹中的新文章 自动添加 Front Matter（标题、日期、标签等） 每天凌晨 12 点自动发布到博客 测试内容1. Markdown 语法测试粗体文字 和 斜体文字 2. 代码块测试1echo “Hello, World!” 3. 列表测试 项目 1 项目 2 项目 3 4. 引用测试 这是一段引用文字，用来测试渲染效果。 总结如果这篇文章成功发布到博客，说明自动发布系统工作正常！🎉</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 随笔 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 随笔 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>穷鬼福音：用GLM-4白嫖Claude Code，这波赚大了</title>
+      <link href="/my_blog/2026/01/05/%E7%A9%B7%E9%AC%BC%E7%A6%8F%E9%9F%B3%EF%BC%9A%E7%94%A8GLM-4%E7%99%BD%E5%AB%96Claude-Code%EF%BC%8C%E8%BF%99%E6%B3%A2%E8%B5%9A%E5%A4%A7%E4%BA%86/"/>
+      <url>/my_blog/2026/01/05/%E7%A9%B7%E9%AC%BC%E7%A6%8F%E9%9F%B3%EF%BC%9A%E7%94%A8GLM-4%E7%99%BD%E5%AB%96Claude-Code%EF%BC%8C%E8%BF%99%E6%B3%A2%E8%B5%9A%E5%A4%A7%E4%BA%86/</url>
+      
+        <content type="html"><![CDATA[<p>穷鬼福音：用GLM-4白嫖Claude Code，这波赚大了前言：穷是真的穷前几天刚用 Claude Code 搭建了博客，那体验确实爽，跟真人对话一样，还帮我自动写代码、改配置。但一看价格——20美元一个月！ 算了算，20刀就是140多人民币，够我吃好几顿排骨了。作为个刚入门的小白，平时也就写写博客、改改配置，这钱花得心疼啊。 然后我就想，国内有没有平替？ 搜了一圈，还真让我找到了——智谱AI的GLM-4！ 关键是，它免费额度很大，而且效果还挺能打。今天就把我折腾的过程写下来，手把手教大家白嫖（不是）。 先说结论：效果怎么样？直接说感受吧： ✅ 写代码：日常使用足够，能理解上下文，知道我想干啥✅ 中文理解：毕竟是国产模型，这点比 Claude 强✅ 响应速度：感觉比 Claude 快，可能是国内服务器✅ 免费额度：新用户送一大堆，日常使用基本够用 ❌ 复杂推理：特别复杂的逻辑，感觉还是差点意思❌ 代码风格：偶尔会写一些奇怪的代码（但能跑） 总的来说，对于我们这种小白用户，完全够用！ 准备工作1. 注册智谱AI账号先去智谱AI开放平台：<a href="https://open.bigmodel.cn/">https://open.bigmodel.cn/</a> 注册流程很简单，手机号验证一下就行。 重点来了：注册完会送你免费额度！ 新用户：好像是送 25 元的额度 每天登录：还能领一些token 具体数量可能会变，反正日常使用肯定够了。 2. 创建 API Key登录后，右上角有个”API Key”，点进去： 点击”创建API Key” 给它起个名字，比如”Claude Code” 复制这个 Key（只显示一次，赶紧复制保存） 这个 Key 长这样： 1sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 把它存好，等下要用。 3. 安装 Claude Code如果你还没装 Claude Code，先装一下： 12345# 使用 npm 安装npm install -g @anthropic-ai&#x2F;claude-code# 或者用 pnpmpnpm add -g @anthropic-ai&#x2F;claude-code 安装完，终端里输入 claude，应该就能看到欢迎界面了。 开始折腾第一步：找到配置文件Claude Code 的配置文件在： Mac&#x2F;Linux: ~&#x2F;.config&#x2F;claude-code&#x2F;config.json Windows: %APPDATA%\claude-code\config.json 如果文件不存在，可以先运行一次 claude，它会自动创建。 第二步：修改配置打开配置文件，会看到类似这样的内容： 1234{ “apiUrl”: “<a href="https://api.anthropic.com/">https://api.anthropic.com</a>“, “apiKey”: “你的Claude官方Key”} 我们要把它改成这样： 123456{ “apiUrl”: “<a href="https://open.bigmodel.cn/api/paas/v4/">https://open.bigmodel.cn/api/paas/v4/</a>“, “apiKey”: “你的GLM-4的Key”, “model”: “glm-4-plus”, “provider”: “glm”} 等等，这里有个坑！ Claude Code 原生不支持自定义 API，所以我们需要用个代理工具。 第三步：安装代理工具（踩坑实录）我当时直接改配置，结果报错了。查了一下才发现，Claude Code 只认 Anthropic 的 API。 于是找了半天，找到了这个工具：claude-code-proxy 安装方法： 123456789# 克隆项目git clone <a href="https://github.com/your-repo/claude-code-proxy.gitcd">https://github.com/your-repo/claude-code-proxy.gitcd</a> claude-code-proxy# 安装依赖npm install# 启动代理npm start 代理会在本地开一个服务，比如 <a href="http://localhost:8080/">http://localhost:8080</a> 第四步：修改 Claude Code 配置现在再次修改配置文件： 12345{ “apiUrl”: “<a href="http://localhost:8080/">http://localhost:8080</a>“, “apiKey”: “你的GLM-4的Key”, “model”: “glm-4-plus”} 第五步：测试一下打开终端，输入： 1claude 然后随便说点啥，比如： 1你好，用中文回复我 如果看到中文回复，恭喜你，成功了！ 踩坑记录（血泪史）坑1：代理起不来现象：启动代理时报错，端口被占用。 解决：换个端口，修改代理的配置文件，把 8080 改成别的，比如 8888。 坑2：Key 无效现象：提示 API Key 无效。 原因：我复制的时候多复制了个空格…真的无语。 解决：重新复制一遍，注意别带空格。 坑3：响应很慢现象：发个问题，半天不回。 原因：智谱 API 有时抽风，或者我网络有问题。 解决：多试几次，或者换个网络。 坑4：突然不能用了现象：用得好好的，突然报错。 原因：免费额度用完了。 解决：等第二天领新的，或者实名认证后能领更多。 实际使用体验体验1：写博客我试着让它写一篇博客： 1帮我写一篇关于如何使用 GLM-4 的博客，风格要接地气，别太正式 结果：写出来的东西还行，有那种感觉了，但还是有点 AI 味。我自己改了改就好了。 评价：✅ 能用，但需要自己润色 体验2：写代码让它帮我写个 Python 脚本： 1写个 Python 脚本，批量重命名文件夹里的图片 结果：代码能跑，但写法有点奇怪，变量名也不太规范。 评价：✅ 功能实现了，但代码质量一般 体验3：改配置让它帮我改 Hexo 配置： 1把 Hexo 的主题改成 matery，并且安装必要的插件 结果：它给我列了一堆命令，我照着执行，居然成功了！ 评价：✅ 这个很赞，不用自己去查文档了 体验4：解释代码有时候别人的代码看不懂，直接扔给它： 1解释一下这段代码是干什么的 结果：解释得挺清楚，比我自己看快多了。 评价：✅ 学习神器 对比一下：Claude vs GLM-4.7 项目 Claude GLM-4 价格 20刀&#x2F;月 20￥ 中文理解 还行 很好 代码质量 很好 还行 响应速度 快 快 推理能力 很强 还行 适合场景 专业开发 日常基础开发 我的看法： 如果你是专业开发者，天天用，那就老老实实买 Claude 如果像我这样，日常写写博客、改改代码，GLM-4 完全够用 省下的钱买Gemini不香吗？ 常见问题Q1: 会被封号吗？A：目前没听说有被封的，但建议不要太频繁调用，正常使用没问题。 Q2: 额度够用吗？A：我平时写博客、改代码，用了一周还剩一大半。如果你不是重度用户，肯定够。 Q3: 比原版差多少？A：说实话，日常使用感觉不出太大差别。特别复杂的任务可能会差一些。 Q4: 稳定吗？A：大部分时间很稳定，偶尔会抽风，多试几次就好。 Q5: 支持 GPT 吗？A：理论上支持所有兼容 OpenAI API 的模型，但我只试了 GLM-4。 进阶技巧技巧1：设置快捷命令如果你经常用某个功能，可以设置个快捷命令： 1alias cc&#x3D;’claude’ 这样以后输入 cc 就能用了。 技巧2：配合其他工具可以把 GLM-4 接到其他工具上，比如： VS Code 插件 JetBrains 插件 自己写的脚本 只要支持自定义 API，都能用。 技巧3：多账号切换如果你有多个 GLM-4 账号，可以写个脚本切换： 12345678910111213141516#!&#x2F;bin&#x2F;bash# switch-key.shecho “选择账号：”echo “1. 账号A”echo “2. 账号B”read choiceif [ $choice -eq 1 ]; then echo “sk-xxxxx” &gt; ~&#x2F;.glm-keyelif [ $choice -eq 2 ]; then echo “sk-yyyyy” &gt; ~&#x2F;.glm-keyfi# 重启代理restart-proxy 总结折腾了一圈，我的感受是： GLM-4 作为平替完全够用 日常写代码、改配置、写博客，毫无压力 中文理解比 Claude 好 免费额度很大方 有门槛，但不高 需要折腾一下代理 遇到问题得自己查 但跟着教程来，半小时搞定 省钱才是硬道理 Claude 20刀&#x2F;月 GLM-4 免费 省下的钱买排骨它不香吗？ 适合人群 ✅ 学生党、白嫖党 ✅ 日常轻度使用 ✅ 想体验 AI 但不想花钱 ❌ 重度专业用户（建议买正版） 最后说两句其实折腾这个，一方面是为了省钱，另一方面也是想看看国内的大模型到底怎么样。 用下来感觉，GLM-4 作为平替是合格的。虽然跟 Claude 比还有差距，但对于我们这种普通用户，完全够用了。 而且，免费这两个字，真的很香！ 如果你也想试试，跟着上面的教程来，有问题随时问我。 对了，如果你觉得这篇文章帮到你，给个赞呗，让我也有点继续写下去的动力！ 相关文章： 从零半小时完成Claude Code创作个人网站博客 我的第二篇文章 - Markdown 写作指南 参考资料： 智谱AI开放平台 Claude Code 官方文档 GLM-4 API 文档 如果这篇文章帮到你，顺便请我喝杯奶茶？ 你的支持是我继续创作的动力！ 🎉</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Claude Code </tag>
+            
+            <tag> 教程 </tag>
+            
+            <tag> GLM-4 </tag>
+            
+            <tag> AI </tag>
+            
+            <tag> 白嫖 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>从零半小时完成Claude Code创作个人网站博客</title>
+      <link href="/my_blog/2026/01/05/%E4%BB%8E%E9%9B%B6%E5%8D%8A%E5%B0%8F%E6%97%B6%E5%AE%8C%E6%88%90Claude-Code%E5%88%9B%E4%BD%9C%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E5%8D%9A%E5%AE%A2/"/>
+      <url>/my_blog/2026/01/05/%E4%BB%8E%E9%9B%B6%E5%8D%8A%E5%B0%8F%E6%97%B6%E5%AE%8C%E6%88%90Claude-Code%E5%88%9B%E4%BD%9C%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E5%8D%9A%E5%AE%A2/</url>
+      
+        <content type="html"><![CDATA[<p>从零半小时完成Claude Code创作个人网站博客前言作为一个编程小白，我一直想拥有自己的个人博客，但因为技术门槛望而却步。直到我遇到了 Claude Code——Anthropic 官方的 CLI 工具，它让我在半小时内从零完成了一个精美博客的搭建！ 本文将完整记录我的学习过程，包括踩过的坑和解决方案，希望能帮助到同样想搭建博客的朋友。 为什么选择 Claude Code？在开始之前，我尝试过去看各种教程： ❌ 官方文档太枯燥，看不懂 ❌ 视频教程太长，没耐心看完 ❌ 遇到问题不知道怎么解决 而 Claude Code 完全改变了这一切： ✅ 交互式学习：像和老师对话一样，自然流畅 ✅ 问题驱动：遇到什么问题就问什么，实时解决 ✅ 实战导向：以做项目的方式学习，边做边学 ✅ 自动化执行：命令自动执行，不用担心输错 准备工作在开始之前，你需要： Node.js 环境：我已经安装了 Node.js v23.11.0 GitHub 账号：用于免费托管博客 Claude Code：Anthropic 官方的 CLI 工具 搭建过程第一步：选择技术方案Claude Code 问我想要什么类型的博客，我选择了： 🎯 Hexo 静态博客框架（中文社区活跃） 🎨 Matery 主题（Material Design 风格，美观大方） 🚀 GitHub Pages 免费部署 第二步：初始化项目只需要一条命令，Claude Code 就帮我完成了： 1npx hexo init my-blog 这个命令自动完成了： 创建项目结构 安装依赖 生成默认配置 第三步：配置博客信息Claude Code 通过对话收集我的偏好： 博客标题：个人日记 副标题：记录生活与技术 作者：MarkHuang 语言：中文（zh-CN） 然后自动修改了配置文件 _config.yml，我不需要手动编辑任何配置！ 第四步：安装和配置主题 克隆主题：一条命令完成 1git clone <a href="https://github.com/blinkfox/hexo-theme-matery.git">https://github.com/blinkfox/hexo-theme-matery.git</a> themes&#x2F;matery 安装插件：Claude Code 自动安装了所需的 npm 插件 1pnpm install hexo-generator-search hexo-generator-feed … 创建必要页面：自动创建 categories、tags、about 等页面 第五步：本地预览1npx hexo server -p 4002 打开浏览器访问 <a href="http://localhost:4002/%EF%BC%8C%E5%8D%9A%E5%AE%A2%E5%B0%B1%E5%AE%8C%E7%BE%8E%E8%BF%90%E8%A1%8C%E4%BA%86%EF%BC%81">http://localhost:4002/，博客就完美运行了！</a> 踩坑记录坑 1：GitHub Pages 找不到 Branch 选项问题描述：在 GitHub Pages 设置页面（<a href="https://github.com/hrj-11055/my_blog/settings/pages%EF%BC%89%EF%BC%8C%E6%88%91%E7%9C%8B%E4%B8%8D%E5%88%B0">https://github.com/hrj-11055/my_blog/settings/pages），我看不到</a> “Branch” 下拉菜单。 原因分析：GitHub 默认使用 gh-pages 分支部署，但我的仓库还没有这个分支。 解决方案：我告诉 Claude Code “我不需要 gh-pages 分支”，它立马帮我把配置改成了使用 main 分支： 12345# _config.ymldeploy: type: git repo: <a href="https://github.com/hrj-11055/my_blog.git">https://github.com/hrj-11055/my_blog.git</a> branch: main # 改为 main 分支 坑 2：部署时出现 Secret 扫描错误问题描述：部署时 GitHub 提示代码中包含敏感信息（Tencent Cloud Secret ID），推送被阻止。 1234remote: error: GH013: Repository rule violations found for refs&#x2F;heads&#x2F;gh-pagesremote: - Push cannot contain secretsremote: - Tencent Cloud Secret IDremote: path: libs&#x2F;twikoo&#x2F;twikoo.all.min.js 原因分析：Matery 主题自带的 twikoo 评论库文件中包含测试用的密钥，触发了 GitHub 的安全扫描。 解决方案：Claude Code 通过一系列操作帮我解决了： 删除主题中的 twikoo 文件夹 1mv themes&#x2F;matery&#x2F;source&#x2F;libs&#x2F;twikoo themes&#x2F;matery&#x2F;source&#x2F;libs&#x2F;twikoo.bak 重新生成网站（不包含该文件） 1npx hexo clean &amp;&amp; npx hexo generate 再次部署成功 学到的经验： 有些第三方插件可能包含测试密钥，部署时要注意 Claude Code 能快速定位问题并提供解决方案 坑 3：网络连接问题问题描述：部署时遇到 “Empty reply from server” 错误。 解决方案： 多尝试几次 等网络恢复后重试 文章已经生成好了，随时可以部署 最终成果经过半小时的学习，我完成了： ✅ 博客系统搭建 Hexo 博客框架 Matery 精美主题 完整的页面结构 ✅ 内容创作 创建了第一篇博客《我的第一篇博客》 创建了 Markdown 写作教程 创建了部署说明文档 ✅ 部署配置 配置了 GitHub Pages 使用 main 分支部署 博客地址：<a href="https://hrj-11055.github.io/my_blog/">https://hrj-11055.github.io/my_blog/</a> Claude Code 带来的改变1. 学习方式的变化传统学习： 看文档 → 不懂 → 查资料 → 还是不懂 → 放弃 使用 Claude Code： 遇到问题 → 问 Claude Code → 立即解决 → 继续前进 2. 效率的提升 ❌ 手动查找文档：需要 1-2 小时 ✅ Claude Code 实时解答：30 秒 ❌ 自己调试错误：可能 1 天 ✅ Claude Code 快速定位：5 分钟 3. 学到的技能通过这个项目，我不仅搭建了博客，还学会了： Hexo 博客系统的使用 Markdown 写作语法 Git 基本操作 GitHub Pages 部署 命令行基本操作 Claude Code 的使用技巧 Claude Code 常用技巧技巧 1：随时提问遇到不懂的，直接问： “这个命令是干什么的？” “为什么会出现这个错误？” “怎么配置XXX？” 技巧 2：让 Claude Code 解释代码1# Claude Code 会解释每一步在做什么 技巧 3：自动化任务 创建文件、修改配置 安装依赖、运行命令 全部自动完成，不担心出错 技巧 4：学习最佳实践Claude Code 会： 推荐合适的工具 提供最佳实践 避免常见错误 后续计划现在博客已经搭建完成，我计划： 持续创作：每周写 1-2 篇博客 学习更多：继续用 Claude Code 学习前端知识 优化博客：自定义主题、添加功能 分享经验：帮助更多小白搭建博客 写作和发布创建新文章1npx hexo new “文章标题” 编辑文章使用 VS Code 或 Typora 编辑 Markdown 文件。 发布到 GitHub1npx hexo clean &amp;&amp; npx hexo generate –deploy 就这么简单！ 总结使用 Claude Code 搭建博客的经历让我深刻体会到： 门槛不再是问题：有 AI 助手，编程小白也能做项目 效率大幅提升：半小时完成过去需要一天的工作 学习变得有趣：实战项目 + 实时解答，动力十足 错误并不可怕：有 AI 帮忙快速定位和解决 对于想学编程但畏难的朋友，我的建议是： ✅ 找一个实际项目（比如搭建博客）✅ 使用 Claude Code 作为 AI 助手✅ 边做边学，遇到问题就问✅ 记录过程，分享经验 半小时，从零到上线，这就是 Claude Code 的魅力！ 🚀 附录：常用命令速查1234567891011121314151617# 创建文章npx hexo new “文章标题”# 本地预览npx hexo server -p 4002# 清理缓存npx hexo clean# 生成静态文件npx hexo generate# 部署到 GitHubnpx hexo deploy# 一键发布npx hexo clean &amp;&amp; npx hexo generate –deploy 参考资料 Hexo 官方文档 Matery 主题文档 Claude Code 官方文档 GitHub Pages 文档 如果你也想搭建自己的博客，跟着这篇文章一步步操作，半小时就能完成！ 有问题欢迎在评论区交流，或者通过以下方式联系我： GitHub: @hrj-11055 博客: <a href="https://hrj-11055.github.io/my_blog/">https://hrj-11055.github.io/my_blog/</a> 感谢阅读，祝你也成功搭建出自己的博客！ 🎉</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Claude Code </tag>
+            
+            <tag> Hexo </tag>
+            
+            <tag> 博客搭建 </tag>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>我的第三篇文章 - 写作与部署实操</title>
+      <link href="/my_blog/2026/01/05/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%89%E7%AF%87%E6%96%87%E7%AB%A0-%E5%86%99%E4%BD%9C%E4%B8%8E%E9%83%A8%E7%BD%B2%E5%AE%9E%E6%93%8D/"/>
+      <url>/my_blog/2026/01/05/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%89%E7%AF%87%E6%96%87%E7%AB%A0-%E5%86%99%E4%BD%9C%E4%B8%8E%E9%83%A8%E7%BD%B2%E5%AE%9E%E6%93%8D/</url>
+      
+        <content type="html"><![CDATA[<p>我的第三篇文章 - 写作与部署实操这是一篇用于演示 Hexo 写作与部署流程的文章。你可以参考以下步骤进行后续创作： 写作流程 创建文章：npx hexo new “文章标题” 编辑内容：在 source&#x2F;_posts&#x2F; 目录修改新建的 .md 文件 本地预览：npx hexo server 后访问 <a href="http://localhost:4000/my_blog/">http://localhost:4000/my_blog/</a> 部署发布：npx hexo clean &amp;&amp; npx hexo generate –deploy Markdown 示例标题与文本这是正文段落，支持加粗、斜体与删除线： 粗体、斜体、删除线 列表与代码有序列表： 第一步 第二步 代码块： 1console.log(‘Hello Hexo’); 图片与链接插入图片： 链接示例：GitHub 祝写作顺利，发布成功！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 随笔 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> 写作 </tag>
+            
+            <tag> 部署 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>我的第二篇文章 - Markdown 写作指南</title>
+      <link href="/my_blog/2026/01/05/%E6%88%91%E7%9A%84%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0-Markdown-%E5%86%99%E4%BD%9C%E6%8C%87%E5%8D%97/"/>
+      <url>/my_blog/2026/01/05/%E6%88%91%E7%9A%84%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0-Markdown-%E5%86%99%E4%BD%9C%E6%8C%87%E5%8D%97/</url>
+      
+        <content type="html"><![CDATA[<p>我的第二篇文章 - Markdown 写作指南欢迎来到我的博客！这是一篇关于如何使用 Markdown 写作的文章。 什么是 Markdown？Markdown 是一种轻量级标记语言，让你可以使用易读易写的纯文本格式编写文档。 Markdown 基础语法1. 文字格式你可以使用以下方式强调文字： 粗体文字：使用两个星号包围 斜体文字：使用一个星号包围 粗斜体：使用三个星号 删除线：使用两个波浪线 2. 列表无序列表： 第一项 第二项 子项目 子项目 第三项 有序列表： 第一步 第二步 第三步 3. 链接和图片访问 GitHub 4. 引用 这是一段引用文字。可以有多行。 5. 代码行内代码：使用 代码 这种方式 代码块： 123function hello() { console.log(“Hello, World!”);} 12def hello(): print(“Hello, World!”) 6. 表格 姓名 年龄 职业 张三 25 工程师 李四 30 设计师 7. 分隔线 Front Matter 配置说明每篇文章开头的 — 包围的部分是 Front Matter，用来配置文章属性： 123456789101112131415161718—title: 文章标题date: 2026-01-05 18:10:46 # 发布日期author: 作者名img: &#x2F;medias&#x2F;featureimages&#x2F;1.jpg # 特色图片top: false # 是否置顶cover: true # 是否在首页显示封面coverImg: &#x2F;medias&#x2F;featureimages&#x2F;1.jpg # 封面图片password: # 文章密码（可选）toc: true # 是否显示目录mathjax: false # 是否启用数学公式summary: 文章摘要 # 在首页显示的简介categories: # 分类（只能有一个） - 教程tags: # 标签（可以有多个） - Markdown - 写作— 推荐的写作流程 创建文章：npx hexo new “文章标题” 编辑内容：使用你喜欢的编辑器（VS Code、Typora 等） 本地预览：npx hexo server 发布部署：npx hexo clean &amp;&amp; npx hexo generate –deploy 小技巧 使用 图片：将图片放在 source&#x2F;images&#x2F; 目录，然后用 <img src="/my_blog/images/%E5%9B%BE%E7%89%87%E5%90%8D.jpg" alt="图片"> 引用 保存文章时使用 UTF-8 编码 文件名最好使用英文或拼音，避免特殊字符 写完记得检查 categories 和 tags 是否正确 开始你的创作之旅吧！ ✨</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> 写作 </tag>
+            
+            <tag> Markdown </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>我的第一篇博客</title>
+      <link href="/my_blog/2026/01/05/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
+      <url>/my_blog/2026/01/05/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+      
+        <content type="html"><![CDATA[<p>我的第一篇博客大家好！欢迎来到我的个人博客。 关于这个博客这是我使用 Hexo 静态博客生成器，配合 Matery 主题创建的个人博客。在创建这个博客的过程中，我学习了： Hexo 博客框架的基本使用 如何安装和配置主题 如何创建和发布文章 使用 Markdown 语法写作 为什么选择 Hexo？Hexo 是一个快速、简洁且高效的博客框架，具有以下优点： 快速生成：基于 Node.js，生成速度极快 丰富的主题：社区有大量精美主题可供选择 一键部署：可以轻松部署到 GitHub Pages Markdown 支持：使用 Markdown 编写文章，简单高效 未来计划接下来我计划： 持续更新博客内容 分享学习心得和技术笔记 记录生活点滴 学习更多前端知识 感谢阅读！ 如果你也想创建自己的博客，推荐从 Hexo 开始！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> 博客 </tag>
+            
+            <tag> 学习 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/my_blog/2026/01/05/hello-world/"/>
+      <url>/my_blog/2026/01/05/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new “My New Post” More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
