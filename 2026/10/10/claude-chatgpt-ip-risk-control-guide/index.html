@@ -1,0 +1,1329 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="为什么你的 Claude / ChatGPT 频繁被封？解析机房 IP 与住宅原生网络风控机制（附排障与分流指南）, 个人日记">
+    <meta name="description" content="如果你经常使用 ChatGPT Plus、Claude 3.5 Sonnet、Cursor 或 Midjourney，大概率遇到过这些令人抓狂的场景：
+
+打开 ChatGPT，页面直接提示 Access Denied (Error 1020">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>为什么你的 Claude / ChatGPT 频繁被封？解析机房 IP 与住宅原生网络风控机制（附排障与分流指南） | 个人日记</title>
+    <link rel="icon" type="image/png" href="/my_blog/favicon.png">
+    
+
+
+    <!-- bg-cover style     -->
+
+
+
+<link rel="stylesheet" type="text/css" href="/my_blog/libs/awesome/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="/my_blog/libs/materialize/materialize.min.css">
+<link rel="stylesheet" type="text/css" href="/my_blog/libs/aos/aos.css">
+<link rel="stylesheet" type="text/css" href="/my_blog/libs/animate/animate.min.css">
+<link rel="stylesheet" type="text/css" href="/my_blog/libs/lightGallery/css/lightgallery.min.css">
+<link rel="stylesheet" type="text/css" href="/my_blog/css/matery.css">
+<link rel="stylesheet" type="text/css" href="/my_blog/css/my.css">
+<link rel="stylesheet" type="text/css" href="/my_blog/css/dark.css" media="none" onload="if(media!='all')media='all'">
+
+
+
+
+    <link rel="stylesheet" href="/my_blog/libs/tocbot/tocbot.css">
+    <link rel="stylesheet" href="/my_blog/css/post.css">
+
+
+
+
+    
+        <link rel="stylesheet" type="text/css" href="/my_blog/css/reward.css">
+    
+
+
+
+    <script src="/my_blog/libs/jquery/jquery-3.6.0.min.js"></script>
+
+<meta name="generator" content="Hexo 8.1.2"><link rel="stylesheet" href="/my_blog/css/prism.css" type="text/css"></head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/my_blog/" class="waves-effect waves-light">
+                    
+                    <img src="/my_blog/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">个人日记</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/my_blog/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/my_blog/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/my_blog/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/my_blog/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/my_blog/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/my_blog/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/my_blog/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/my_blog/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/my_blog/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/my_blog/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-book-open" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/my_blog/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-heart" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+  <li>
+    <a href="javascript:;" class="waves-effect waves-light" onclick="switchNightMode()" title="深色/浅色模式" >
+      <i id="sum-moon-icon" class="fas fa-sun" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/my_blog/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">个人日记</div>
+        <div class="logo-desc">
+            
+            MarkHuang 的个人博客，分享生活与学习心得
+            
+        </div>
+    </div>
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/my_blog/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/my_blog/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/my_blog/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/my_blog/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/my_blog/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/my_blog/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/my_blog/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/my_blog/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/my_blog/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/my_blog/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-book-open"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/my_blog/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-heart"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/my_blog/medias/featureimages/4.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">为什么你的 Claude / ChatGPT 频繁被封？解析机房 IP 与住宅原生网络风控机制（附排障与分流指南）</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/my_blog/tags/ChatGPT/">
+                                <span class="chip bg-color">ChatGPT</span>
+                            </a>
+                        
+                            <a href="/my_blog/tags/Claude/">
+                                <span class="chip bg-color">Claude</span>
+                            </a>
+                        
+                            <a href="/my_blog/tags/%E9%9D%99%E6%80%81%E4%BD%8F%E5%AE%85IP/">
+                                <span class="chip bg-color">静态住宅IP</span>
+                            </a>
+                        
+                            <a href="/my_blog/tags/%E7%BD%91%E7%BB%9C%E4%BC%98%E5%8C%96/">
+                                <span class="chip bg-color">网络优化</span>
+                            </a>
+                        
+                            <a href="/my_blog/tags/%E9%A3%8E%E6%8E%A7%E6%8E%92%E9%9A%9C/">
+                                <span class="chip bg-color">风控排障</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/my_blog/categories/AI%E6%95%99%E7%A8%8B/" class="post-category">
+                                AI教程
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2026-10-10
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <p>如果你经常使用 <strong>ChatGPT Plus</strong>、<strong>Claude 3.5 Sonnet</strong>、<strong>Cursor</strong> 或 <strong>Midjourney</strong>，大概率遇到过这些令人抓狂的场景：</p>
+<ul>
+<li>打开 ChatGPT，页面直接提示 <strong><code>Access Denied (Error 1020)</code></strong> 或者一直转圈提示无法加载；</li>
+<li>刚注册好的 Claude 账号，甚至还没发几句 Prompt，第二天登录直接显示 <strong><code>Your account has been disabled</code></strong>；</li>
+<li>绑定海外虚拟卡开通 Plus &#x2F; Pro 订阅时，Stripe 支付页面反复提示扣款失败或高风险拒绝；</li>
+<li>在 Cursor 中使用 Agent 补全，频繁提示 <code>Connection timeout</code> 或 API 频繁被限流。</li>
+</ul>
+<p>很多朋友第一时间会怀疑：“是不是我的浏览器指纹泄露了？”、“是不是接码平台的手机号不干净？”。</p>
+<p>但根据我们大量实测与网络调试发现：<strong>超过 85% 的封号与拦截，根本原因只有一个 —— 你的网络出口 IP 被平台标记为高风险的“机房数据中心 IP（Datacenter IP）”。</strong></p>
+<p>本文将为你深度拆解 OpenAI 与 Anthropic 的风控底层机制，并手把手教你如何检测自己的网络纯净度，以及如何配置一套真正稳定、不被封号的商业级分流环境。</p>
+<hr>
+<h2 id="一、-底层解密：AI-平台是如何识别并封锁你的？"><a href="#一、-底层解密：AI-平台是如何识别并封锁你的？" class="headerlink" title="一、 底层解密：AI 平台是如何识别并封锁你的？"></a>一、 底层解密：AI 平台是如何识别并封锁你的？</h2><p>像 Anthropic（Claude）和 OpenAI 这类头部大厂，为了防御爬虫抓取和脚本批量滥用，背后接入了极度严苛的风控防护系统（如 Cloudflare Turnstile、Arkose Labs、Sift 等）。</p>
+<p>他们的风控引擎主要在做三层筛选：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">[ 用户请求 ]</span><br><span class="line">     │</span><br><span class="line">     ▼</span><br><span class="line">【第一层：IP 属性审计】──&gt; 检查 ASN 类别：机房 IP 还是 真实家庭住宅宽带？</span><br><span class="line">     │</span><br><span class="line">     ▼</span><br><span class="line">【第二层：欺诈分与行为历史】──&gt; 过去 24 小时该 IP 有多少不同账号登录？多少爬虫请求？</span><br><span class="line">     │</span><br><span class="line">     ▼</span><br><span class="line">【第三层：环境一致性】──&gt; 浏览器语言、时区、DNS 归属地与出口 IP 是否匹配？</span><br></pre></td></tr></table></figure>
+
+<h3 id="1-机房-IP（Datacenter）vs-原生住宅-IP（Residential-ISP）"><a href="#1-机房-IP（Datacenter）vs-原生住宅-IP（Residential-ISP）" class="headerlink" title="1. 机房 IP（Datacenter）vs 原生住宅 IP（Residential &#x2F; ISP）"></a>1. 机房 IP（Datacenter）vs 原生住宅 IP（Residential &#x2F; ISP）</h3><ul>
+<li><strong>机房 IP</strong>：大部分几十块钱一年的廉价代理、普通 VPS（如 AWS、DigitalOcean、Vultr、Linode），其自治系统号（ASN）在国际数据库中被直接标注为 <strong><code>type: hosting / data center</code></strong>。正常海外普通人绝不可能坐在数据中心机房里聊 ChatGPT，因此只要带有该标签，风控系数直接拉满。</li>
+<li><strong>双 ISP &#x2F; 原生住宅 IP</strong>：直接由海外当地电信运营商（如 AT&amp;T、Verizon、Comcast 等）分配的真实宽带 IP，数据库标记为 <strong><code>type: isp / residential</code></strong>。在风控系统眼里，这就是一个正常的海外本土真实居民在上网。</li>
+</ul>
+<h3 id="2-“邻居连坐”效应"><a href="#2-“邻居连坐”效应" class="headerlink" title="2. “邻居连坐”效应"></a>2. “邻居连坐”效应</h3><p>在普通的公共节点上，一个公网机房 IP 可能同时有上百人在用。其中只要有任何一个人用脚本爬取网页、发送违规词或尝试恶意扣费，<strong>整个 IP 段就会被平台整体拉黑</strong>。即使你什么都没做，只是正常对话，也会因为“邻居”的违规行为被连坐封号。</p>
+<hr>
+<h2 id="二、-自查你的网络环境：核心自检工具清单"><a href="#二、-自查你的网络环境：核心自检工具清单" class="headerlink" title="二、 自查你的网络环境：核心自检工具清单"></a>二、 自查你的网络环境：核心自检工具清单</h2><p>在继续使用你的贵重账号前，建议打开以下几个权威风控查询工具，给自己当前的网络做一次体检：</p>
+<ol>
+<li><strong>IP 类型与 ASN 查询</strong>：<a target="_blank" rel="noopener" href="https://ipinfo.io/">ipinfo.io</a><ul>
+<li>查看 <code>org</code> 和 <code>asn.type</code> 字段。如果显示 <code>hosting</code>，说明是机房 IP；如果显示 <code>isp</code>，说明是原生运营商网络。</li>
+</ul>
+</li>
+<li><strong>风控欺诈值检测</strong>：<a target="_blank" rel="noopener" href="https://scamalytics.com/">scamalytics.com</a><ul>
+<li>输入你的公网 IP，查看 <strong>Fraud Score（欺诈分数）</strong>。</li>
+<li><strong>0 ~ 15 分</strong>：极度纯净（适合 Claude&#x2F;Stripe 支付）；</li>
+<li><strong>15 ~ 40 分</strong>：中度风险（ChatGPT 普通对话勉强可用）；</li>
+<li><strong>40 分以上</strong>：极高风险（秒封、秒拦截）。</li>
+</ul>
+</li>
+<li><strong>DNS &#x2F; WebRTC 泄漏测试</strong>：<a target="_blank" rel="noopener" href="https://whoer.net/">whoer.net</a><ul>
+<li>检查伪装度是否达到 90% 以上，重点检查 DNS 地址是否泄露了国内运营商节点。</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="三、-终极解决方案：双-ISP-纯净出口-Mihomo-自动化分流"><a href="#三、-终极解决方案：双-ISP-纯净出口-Mihomo-自动化分流" class="headerlink" title="三、 终极解决方案：双 ISP 纯净出口 + Mihomo 自动化分流"></a>三、 终极解决方案：双 ISP 纯净出口 + Mihomo 自动化分流</h2><p>要彻底摆脱频繁封号与被拦截的恶性循环，业界成熟的商业级解法是：<strong>普通流量走高速中转，AI 核心流量精准分流至独立纯净的双 ISP 住宅出口。</strong></p>
+<h3 id="1-为什么“精准分流”是最佳策略？"><a href="#1-为什么“精准分流”是最佳策略？" class="headerlink" title="1. 为什么“精准分流”是最佳策略？"></a>1. 为什么“精准分流”是最佳策略？</h3><ul>
+<li>如果所有看 4K 视频、下载大文件的流量都走住宅 IP，成本极高且容易拥堵；</li>
+<li>最佳实践是利用 <strong>Clash &#x2F; Mihomo</strong> 的路由规则引擎：<ul>
+<li><strong>国内网站（微信、百度、B站）</strong> $\to$ <strong>DIRECT（本地直连，完全不耗代理）</strong>；</li>
+<li><strong>普通国际网站（YouTube、GitHub、Google）</strong> $\to$ <strong>优质高速中转线路（低延迟、大带宽）</strong>；</li>
+<li><strong>OpenAI &#x2F; Claude &#x2F; Stripe 支付</strong> $\to$ <strong>锁定“双 ISP 静态纯净住宅出口（Node3）”</strong>。</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-路由分流规则示例（Mihomo-Clash-核心片段）"><a href="#2-路由分流规则示例（Mihomo-Clash-核心片段）" class="headerlink" title="2. 路由分流规则示例（Mihomo &#x2F; Clash 核心片段）"></a>2. 路由分流规则示例（Mihomo &#x2F; Clash 核心片段）</h3><p>在客户端配置中，将 AI 关键域名独立归组并绑定纯净出口：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 策略组定义</span></span><br><span class="line"><span class="attr">proxy-groups:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">🤖</span> <span class="string">AI</span> <span class="string">专线</span> <span class="string">(纯净住宅出口)</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">select</span></span><br><span class="line">    <span class="attr">proxies:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">🇺🇸</span> <span class="string">Node3</span> [<span class="string">双ISP纯净静态住宅</span>]</span><br><span class="line">      <span class="bullet">-</span> <span class="string">🇭🇰</span> <span class="string">香港优化专线</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 路由匹配规则</span></span><br><span class="line"><span class="attr">rules:</span></span><br><span class="line">  <span class="comment"># 优先分流 OpenAI 与 Claude 核心生态</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">DOMAIN-SUFFIX,oaistatic.com,🤖</span> <span class="string">AI</span> <span class="string">专线</span> <span class="string">(纯净住宅出口)</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">DOMAIN-SUFFIX,oaiusercontent.com,🤖</span> <span class="string">AI</span> <span class="string">专线</span> <span class="string">(纯净住宅出口)</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">DOMAIN-SUFFIX,openai.com,🤖</span> <span class="string">AI</span> <span class="string">专线</span> <span class="string">(纯净住宅出口)</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">DOMAIN-SUFFIX,chatgpt.com,🤖</span> <span class="string">AI</span> <span class="string">专线</span> <span class="string">(纯净住宅出口)</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">DOMAIN-SUFFIX,anthropic.com,🤖</span> <span class="string">AI</span> <span class="string">专线</span> <span class="string">(纯净住宅出口)</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">DOMAIN-SUFFIX,claude.ai,🤖</span> <span class="string">AI</span> <span class="string">专线</span> <span class="string">(纯净住宅出口)</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">DOMAIN-SUFFIX,sora.com,🤖</span> <span class="string">AI</span> <span class="string">专线</span> <span class="string">(纯净住宅出口)</span></span><br><span class="line">  </span><br><span class="line">  <span class="comment"># 大陆直连与兜底策略</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">GEOIP,CN,DIRECT</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">MATCH,🐟</span> <span class="string">漏网之鱼</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="四、-避坑推荐：我们内部正在使用的纯净网络出口环境"><a href="#四、-避坑推荐：我们内部正在使用的纯净网络出口环境" class="headerlink" title="四、 避坑推荐：我们内部正在使用的纯净网络出口环境"></a>四、 避坑推荐：我们内部正在使用的纯净网络出口环境</h2><p>如果你不想自己花上千元去租用海外机房专线、折腾住宅 IP 物理出站和编写复杂的路由规则，也可以直接使用我们内部优化打磨的 <strong>专属学术与 AI 商业网络中转站</strong>。</p>
+<h3 id="为什么这个环境专为-AI-创作者设计？"><a href="#为什么这个环境专为-AI-创作者设计？" class="headerlink" title="为什么这个环境专为 AI 创作者设计？"></a>为什么这个环境专为 AI 创作者设计？</h3><ol>
+<li><strong>真实双 ISP 纯净静态住宅出口</strong>：专为 Claude &#x2F; OpenAI 账号安全构建，IP 欺诈分常年维持在 0 分左右，告别 <code>Access Denied</code> 与突发封号。</li>
+<li><strong>开箱即用的分流预设</strong>：一键导入已内置上述完整分流模板，手机与电脑无需任何繁琐配置，打开即可稳定访问。</li>
+<li><strong>极简操作与微信极速支付</strong>：无需折腾海外信用卡或复杂发卡平台，控制台简洁优雅，微信扫码秒开秒用。</li>
+</ol>
+<hr>
+<h3 id="🎁-读者专属福利：注册即享-1GB-1天-高速体验"><a href="#🎁-读者专属福利：注册即享-1GB-1天-高速体验" class="headerlink" title="🎁 读者专属福利：注册即享 1GB &#x2F; 1天 高速体验"></a>🎁 读者专属福利：注册即享 1GB &#x2F; 1天 高速体验</h3><p>为了方便博客读者亲自验证双 ISP 纯净出口对 ChatGPT 和 Claude 的防风控效果，无需购买任何套餐或繁琐核销卡密，直接开箱即用：</p>
+<ol>
+<li><strong>一键直达注册</strong>：点击直达专属通道 👉 <strong><a target="_blank" rel="noopener" href="https://relay.yuanshuo.club/#/register">【纯净 AI 网络中转站 · 1GB 体验专线】(https://relay.yuanshuo.club/#/register)</a></strong>；</li>
+<li><strong>秒级自动开通</strong>：输入邮箱完成注册后，系统将<strong>自动发放 1GB &#x2F; 1天 双 ISP 纯净出口体验额度</strong>，控制台自带一键唤醒 Clash &#x2F; Mihomo，无需手动编写配置；</li>
+<li><strong>技术交流与指导</strong>：如果在配置客户端分流或注册 Claude 过程中遇到任何问题，欢迎随时添加博主个人微信：<strong><code>hrj-11055</code></strong>（备注：<em>AI博客</em>），免费提供一对一网络排障协助。</li>
+</ol>
+<hr>
+<h2 id="五、-结语"><a href="#五、-结语" class="headerlink" title="五、 结语"></a>五、 结语</h2><p>在 AI 工具深度融入日常工作流的今天，一个干净、高确定性的网络环境就像水和电一样必不可少。不要为了省几块钱使用鱼龙混杂的廉价机房 IP，最后导致几百上千块钱充值的官方账号和积累的对话上下文被系统无情封禁。</p>
+<p>持辩证以清醒，用对工具，才能事半功倍！</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/my_blog/about" rel="external nofollow noreferrer">MarkHuang</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://hrj-11055.github.io/my_blog/my_blog/2026/10/10/claude-chatgpt-ip-risk-control-guide/">https://hrj-11055.github.io/my_blog/my_blog/2026/10/10/claude-chatgpt-ip-risk-control-guide/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/my_blog/about" target="_blank">MarkHuang</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/my_blog/tags/ChatGPT/">
+                                    <span class="chip bg-color">ChatGPT</span>
+                                </a>
+                            
+                                <a href="/my_blog/tags/Claude/">
+                                    <span class="chip bg-color">Claude</span>
+                                </a>
+                            
+                                <a href="/my_blog/tags/%E9%9D%99%E6%80%81%E4%BD%8F%E5%AE%85IP/">
+                                    <span class="chip bg-color">静态住宅IP</span>
+                                </a>
+                            
+                                <a href="/my_blog/tags/%E7%BD%91%E7%BB%9C%E4%BC%98%E5%8C%96/">
+                                    <span class="chip bg-color">网络优化</span>
+                                </a>
+                            
+                                <a href="/my_blog/tags/%E9%A3%8E%E6%8E%A7%E6%8E%92%E9%9A%9C/">
+                                    <span class="chip bg-color">风控排障</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/my_blog/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/my_blog/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/my_blog/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/my_blog/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/my_blog/2026/10/10/claude-chatgpt-ip-risk-control-guide/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/my_blog/medias/featureimages/4.jpg" class="responsive-img" alt="为什么你的 Claude / ChatGPT 频繁被封？解析机房 IP 与住宅原生网络风控机制（附排障与分流指南）">
+                        
+                        <span class="card-title">为什么你的 Claude / ChatGPT 频繁被封？解析机房 IP 与住宅原生网络风控机制（附排障与分流指南）</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2026-10-10
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/my_blog/categories/AI%E6%95%99%E7%A8%8B/" class="post-category">
+                                    AI教程
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/my_blog/tags/ChatGPT/">
+                        <span class="chip bg-color">ChatGPT</span>
+                    </a>
+                    
+                    <a href="/my_blog/tags/Claude/">
+                        <span class="chip bg-color">Claude</span>
+                    </a>
+                    
+                    <a href="/my_blog/tags/%E9%9D%99%E6%80%81%E4%BD%8F%E5%AE%85IP/">
+                        <span class="chip bg-color">静态住宅IP</span>
+                    </a>
+                    
+                    <a href="/my_blog/tags/%E7%BD%91%E7%BB%9C%E4%BC%98%E5%8C%96/">
+                        <span class="chip bg-color">网络优化</span>
+                    </a>
+                    
+                    <a href="/my_blog/tags/%E9%A3%8E%E6%8E%A7%E6%8E%92%E9%9A%9C/">
+                        <span class="chip bg-color">风控排障</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/my_blog/2026/08/10/codex-subscription-tutorial/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/my_blog/medias/featureimages/12.jpg" class="responsive-img" alt="从零开始：美区 ID + 科学上网 + 海外银行卡 + 境外手机号接码 + Codex 正规订阅史上最全教程">
+                        
+                        <span class="card-title">从零开始：美区 ID + 科学上网 + 海外银行卡 + 境外手机号接码 + Codex 正规订阅史上最全教程</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2026-08-10
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/my_blog/categories/%E6%95%99%E7%A8%8B/" class="post-category">
+                                    教程
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/my_blog/tags/Codex/">
+                        <span class="chip bg-color">Codex</span>
+                    </a>
+                    
+                    <a href="/my_blog/tags/Apple-ID/">
+                        <span class="chip bg-color">Apple ID</span>
+                    </a>
+                    
+                    <a href="/my_blog/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/">
+                        <span class="chip bg-color">科学上网</span>
+                    </a>
+                    
+                    <a href="/my_blog/tags/%E6%B5%B7%E5%A4%96%E9%93%B6%E8%A1%8C%E5%8D%A1/">
+                        <span class="chip bg-color">海外银行卡</span>
+                    </a>
+                    
+                    <a href="/my_blog/tags/ChatGPT/">
+                        <span class="chip bg-color">ChatGPT</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/my_blog/libs/codeBlock/codeBlockFuction.js"></script>
+
+
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/my_blog/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/my_blog/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/my_blog/libs/codeBlock/codeShrink.js"></script>
+
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/my_blog/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/my_blog/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="503838841"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/my_blog/libs/aplayer/APlayer.min.js"></script>
+<script src="/my_blog/libs/aplayer/Meting.min.js"></script>
+
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2019-2026</span>
+            
+            <a href="/my_blog/about" target="_blank">MarkHuang</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            
+            <br>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/my_blog/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/my_blog/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 白天和黑夜主题 -->
+<div class="stars-con">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>  
+</div>
+
+<script>
+    function switchNightMode() {
+        $('<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"></div></div>').appendTo($('body')),
+        setTimeout(function () {
+            $('body').hasClass('DarkMode') 
+            ? ($('body').removeClass('DarkMode'), localStorage.setItem('isDark', '0'), $('#sum-moon-icon').removeClass("fa-sun").addClass('fa-moon')) 
+            : ($('body').addClass('DarkMode'), localStorage.setItem('isDark', '1'), $('#sum-moon-icon').addClass("fa-sun").removeClass('fa-moon')),
+            
+            setTimeout(function () {
+            $('.Cuteen_DarkSky').fadeOut(1e3, function () {
+                $(this).remove()
+            })
+            }, 2e3)
+        })
+    }
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/my_blog/libs/materialize/materialize.min.js"></script>
+    <script src="/my_blog/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/my_blog/libs/aos/aos.js"></script>
+    <script src="/my_blog/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/my_blog/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/my_blog/js/matery.js"></script>
+
+    
+
+    
+    
+    
+
+    <!-- 雪花特效 -->
+    
+
+    <!-- 鼠标星星特效 -->
+    
+
+     
+        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+        <script src="/my_blog/libs/others/TencentCaptcha.js"></script>
+        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
+    
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/my_blog/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/my_blog/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/my_blog/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
