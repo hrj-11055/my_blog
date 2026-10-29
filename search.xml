@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>推荐阅读｜Claude Max 账号使用与订阅经验</title>
+      <link href="/my_blog/2026/10/29/claude-max-suyuan-recommendation/"/>
+      <url>/my_blog/2026/10/29/claude-max-suyuan-recommendation/</url>
+      
+        <content type="html"><![CDATA[<p>这篇文章由 <strong>夙愿学长（@suyuan1711）</strong> 撰写，整理了作者在 Claude 账号注册、网络环境、订阅和续费方面的个人经验。</p><p>文中有关账号风控的判断是作者的经验和推测，并非经过独立验证的官方规则；实际情况可能因账号、地区和服务政策而变化。</p><p><strong><a href="https://x.com/i/article/2102730566840061952">阅读原文：Claude Max 账号使用与订阅经验</a></strong></p><p>也可以通过下方原帖进入文章：</p><blockquote class="twitter-tweet"><a href="https://x.com/suyuan1711/status/2102744129235193975">查看夙愿学长的原帖</a></blockquote><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 推荐阅读 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Claude </tag>
+            
+            <tag> Claude Max </tag>
+            
+            <tag> 账号使用 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>为什么你的 Claude / ChatGPT 频繁被封？解析机房 IP 与住宅原生网络风控机制（附排障与分流指南）</title>
       <link href="/my_blog/2026/10/10/claude-chatgpt-ip-risk-control-guide/"/>
       <url>/my_blog/2026/10/10/claude-chatgpt-ip-risk-control-guide/</url>
@@ -53,6 +82,8 @@
       
         <tags>
             
+            <tag> ChatGPT </tag>
+            
             <tag> Codex </tag>
             
             <tag> Apple ID </tag>
@@ -60,8 +91,6 @@
             <tag> 科学上网 </tag>
             
             <tag> 海外银行卡 </tag>
-            
-            <tag> ChatGPT </tag>
             
         </tags>
       
